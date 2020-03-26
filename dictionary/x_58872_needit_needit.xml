@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="4" type="collection">
+    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" sizeclass="9" type="collection">
         <element default="40" label="New field" max_length="40" name="new_field" type="string"/>
         <element default="40" label="New field1" max_length="40" name="new_field1" type="string"/>
         <element default="40" label="New Row" max_length="40" name="new_row" type="string"/>
         <element label="New Field 3" max_length="40" name="u_integer_1" type="integer"/>
         <element label="New Field" max_length="50" name="u_new_field" type="string"/>
         <element label="new field 2" max_length="50" name="u_new_field_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request Type" mandatory="true" max_length="40" name="u_reqq_choice" type="string">
             <choice>
                 <element inactive_on_update="false" label="Human Resoucres" sequence="0" value="hr"/>
@@ -25,6 +26,7 @@
                 <element inactive_on_update="false" label="Legal 2" sequence="5" value="legal2"/>
                 <element inactive_on_update="false" label="Your Department Choice 1" sequence="6" value="yourdepartmentchoice1"/>
                 <element inactive_on_update="false" label="Your Department Choice 2" sequence="7" value="yourdepartmentchoice2"/>
+                <element inactive_on_update="false" label="Other" sequence="8" value="other"/>
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
